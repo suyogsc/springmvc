@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<b>Confirmation</b>
-Hi Student  :: ${student.firstName} ${student.lastName} from ${student.country}
+	<b>Confirmation</b> Hi Student :: ${student.firstName}
+	${student.lastName} from ${student.country} ,
+	${student.favouriteLanguage }
+	
+	operating systems:
+	
+	<ul>
+	 <c:forEach var="temp" items="${student.operatingSystems}">
+	 <li>${temp}</li>
+	  
+	 </c:forEach>
+	</ul>
 
 
 </body>
