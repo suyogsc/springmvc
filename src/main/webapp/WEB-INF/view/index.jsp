@@ -8,5 +8,9 @@
 
 <a href="student/showForm">go to student form</a>
 
+<br>
+
+<a href="customer/showForm">go to customer form</a>
+
 </body>
 </html>
